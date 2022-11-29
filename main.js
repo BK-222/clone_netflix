@@ -9,7 +9,8 @@ new Vue({
 	router: router,
 	components: {
 		'mainPage': mainPage,
-		'loginPage': loginPage
+		'loginPage': loginPage,
+		'notFound': notFound
 	}
 	//render: h => (App)
 })//.$mount.('#app');

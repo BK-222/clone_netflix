@@ -2,10 +2,10 @@ const notFound = {
 	template:
 	'<div class="flex justify-center items-center">\
 		<section>\
-			<h1>404</h1>\
-			<h2>Ooops not found!</h2>\
-			<p>to redirect to the mainpage, click to button bellow</p>\
-			<router-link to="/main">main</router-link>.\
+			<h1>Lost your way?</h1>\
+			<h2>Sorry, we can\'t find that page. You\'ll find loads to explore on the home page.</h2>\
+			<router-link to="/">main</router-link>.\
+			<p>Error Code NSES-404</p>\
 		</section>\
 	</div>'
 }

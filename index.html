@@ -4,16 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Netflix</title>
-	<!-- <link rel="stylesheet" href="../../../tiny-tail/tiny-tail.css">
-	<script src="../../../vue.js"></script> -->
+	<!-- <link rel="stylesheet" href="../../../tiny-tail/tiny-tail.css"> -->
+	<!-- <script src="../../../vue.js"></script> -->
 	<link href="https://unpkg.com/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 	<script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
 	<!-- <script src="https://unpkg.com/vuex@3.6.2"></script> -->
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white overflow-y-scroll">
 	<div id="app">
-		<router-view></router-view>
+		<router-view>
+			<main-page></main-page>
+		</router-view>
 	</div>
 </body>
 </html>
@@ -21,7 +23,9 @@
 
 <script src="pages/MainPage.js"></script>
 <script src="pages/LoginPage.js"></script>
+<script src="pages/404NotFound.js"></script>
 <script src="components/BaseButton.js"></script>
+<script src="components/ValueSection.js"></script>
 
 <script src="router.js"></script>
 <script src="main.js"></script>
