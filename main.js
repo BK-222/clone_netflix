@@ -8,9 +8,7 @@ new Vue({
 	// store: vuex,
 	router: router,
 	components: {
-		'mainPage': mainPage,
-		'loginPage': loginPage,
-		'notFound': notFound
+		'theFooter': theFooter
 	}
 	//render: h => (App)
 })//.$mount.('#app');
