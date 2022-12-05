@@ -1,12 +1,12 @@
 const mainPage = {
 	template:
 	'<div>\
-		<div class="flex flex-col h-screen">\
+		<div class="flex flex-col">\
 			<div class="flex justify-between items-center">\
 				<img class="w-44 ml-7" src="public/netflix-l.svg"></img>\
-				<base-button to="/login" class="px-4 py-2 mr-7">Sign In</base-button>\
+				<base-button to="/login" class="px-4 py-1.5 mr-7">Sign In</base-button>\
 			</div>\
-			<div class="flex justify-center items-center h-full mb-24 font-semibold tracking-wide">\
+			<div class="flex justify-center items-center h-full mt-28 mb-56 font-semibold tracking-wide">\
 				<div class="flex flex-col items-center w-3/5">\
 					<p class="mb-4 text-5xl text-center">Unlimited films, TV<br> programmes and more.</p>\
 					<p class="mb-6 text-2xl">Watch anytime. Cancel anytime.</p>\

@@ -1,7 +1,7 @@
 Vue.component('value-section', {
 	template:
 	'<div>\
-		<div class="h-vh4\5 flex justify-around items-center">\
+		<div class="py-16 flex justify-around items-center">\
 			<div class="flex flex-col w-2/5">\
 			 	<p class="text-5xl font-semibold">{{ heading }}</p>\
 			 	<p class="mt-8 text-2xl">{{ subheading }}</p>\
