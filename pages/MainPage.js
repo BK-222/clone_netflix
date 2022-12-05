@@ -7,7 +7,7 @@ const mainPage = {
 				<base-button to="/login" class="px-4 py-2 mr-7">Sign In</base-button>\
 			</div>\
 			<div class="flex justify-center items-center h-full mb-24 font-semibold tracking-wide">\
-				<div class="flex flex-col items-center w-3\5">\
+				<div class="flex flex-col items-center w-3/5">\
 					<p class="mb-4 text-5xl text-center">Unlimited films, TV<br> programmes and more.</p>\
 					<p class="mb-6 text-2xl">Watch anytime. Cancel anytime.</p>\
 					<p class="text-lg">Ready to watch? Enter your email to create or restart your membership.</p>\

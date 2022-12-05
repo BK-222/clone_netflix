@@ -1,7 +1,7 @@
 const theFooter = {
 	template:
 	'<div class="flex justify-center">\
-		<div class="w-2\3">\
+		<div class="w-2/3">\
 			<p>Questions? Call us.</p>\
 			<ul class="flex flex-wrap">\
 				<li>FAQ</li>\
