@@ -29,6 +29,14 @@ const mainPage = {
 		</div>\
 		<div class="text-5xl font-semibold">\
 			Frequently Asked Questions\
+			<div class="flex flex-col">\
+				<div>Lorem ipsum</div>\
+				<div>Lorem ipsum</div>\
+				<div>Lorem ipsum</div>\
+				<div>Lorem ipsum</div>\
+				<div>Lorem ipsum</div>\
+				<div>Lorem ipsum</div>\
+			</div>\
 		</div>\
 		<section-bar></section-bar>\
 	</div>',

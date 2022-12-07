@@ -1,29 +1,29 @@
 const theFooter = {
 	template:
-	'<div class="flex justify-center">\
+	'<div class="flex justify-center text-neutral-500">\
 		<div class="w-2/3">\
-			<p>Questions? Call us.</p>\
-			<ul class="flex flex-wrap">\
-				<li class="w-1/4">FAQ</li>\
-				<li class="w-1/4">Help Center</li>\
-				<li class="w-1/4">Account</li>\
-				<li class="w-1/4">Media Center</li>\
-				<li class="w-1/4">Investor Relations</li>\
-				<li class="w-1/4">Jobs</li>\
-				<li class="w-1/4">Redeem gift cards</li>\
-				<li class="w-1/4">Buy gift cards</li>\
-				<li class="w-1/4">Ways to Watch</li>\
-				<li class="w-1/4">Terms of Use</li>\
-				<li class="w-1/4">Privacy</li>\
-				<li class="w-1/4">Cookie Preferences</li>\
-				<li class="w-1/4">Corporate Information</li>\
-				<li class="w-1/4">Contact us</li>\
-				<li class="w-1/4">Speed Test</li>\
-				<li class="w-1/4">Legal Guarantee</li>\
-				<li class="w-1/4">Legal Notice</li>\
-				<li class="w-1/4">Only on Netflix</li>\
+			<p class="mt-14 mb-6">Questions? Call xxxx xxx xxxx.</p>\
+			<ul class="flex flex-wrap text-sm">\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">FAQ</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Help Center</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Account</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Media Center</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Investor Relations</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Jobs</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Redeem gift cards</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Buy gift cards</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Ways to Watch</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Terms of Use</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Privacy</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Cookie Preferences</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Corporate Information</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Contact us</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Speed Test</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Legal Guarantee</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Legal Notice</a></li>\
+				<li class="w-1/2 lg:w-1/4 py-1.5"><a href="#">Only on Netflix</a></li>\
 			</ul>\
-			<p>Netflix</p>\
+			<p class="my-6 text-sm">Netflix</p>\
 		</div>\
 	</div>'
 }
