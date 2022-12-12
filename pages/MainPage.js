@@ -10,11 +10,7 @@ const mainPage = {
 				<div class="flex flex-col items-center w-3/5">\
 					<p class="mb-4 text-5xl text-center">Unlimited films, TV<br> programmes and more.</p>\
 					<p class="mb-6 text-2xl">Watch anytime. Cancel anytime.</p>\
-					<p class="text-lg">Ready to watch? Enter your email to create or restart your membership.</p>\
-					<form>\
-						<input type="email" placeholder="Email address" v-model="name" min="9">\
-						<base-button to="/signup/registration" class="" type="submit">Get Started</base-button>\
-					</form>\
+					<get-started></get-started>\
 				</div>\
 			</div>\
 		</div>\
@@ -37,6 +33,7 @@ const mainPage = {
 				<div>Lorem ipsum</div>\
 				<div>Lorem ipsum</div>\
 			</div>\
+			<get-started></get-started>\
 		</div>\
 		<section-bar></section-bar>\
 	</div>',
