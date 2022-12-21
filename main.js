@@ -5,7 +5,7 @@
 
 new Vue({
 	el: '#app',
-	// store: vuex,
+	store: vuex,
 	router: router,
 	components: {
 		'theFooter': theFooter

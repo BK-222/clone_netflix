@@ -1,6 +1,6 @@
 const loginPage = {
 	template:
-	'<div>\
-		<p>This is a Login page.</p>\
-	</div>'
+	`<div>
+		<p>This is a Login page.</p>
+	</div>`
 }

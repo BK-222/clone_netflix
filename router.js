@@ -3,6 +3,8 @@ const router = new VueRouter({
 	routes: [
 		{ path: '/', component: mainPage },
 		{ path: '/login', component: notFound },
-		{ path: '/signup/registration', component: notFound }
+		{ path: '/signup', component: notFound },
+		{ path: '/signup/registration', component: registrationPage },
+		// { path: '/:notFound(.*)', component: notFound }
 	]
 });
