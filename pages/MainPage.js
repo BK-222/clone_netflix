@@ -3,13 +3,13 @@ const mainPage = {
 	'<div>\
 		<div class="flex flex-col">\
 			<div class="flex justify-between items-center">\
-				<img class="w-44 ml-7" src="public/netflix-l.svg"></img>\
-				<base-button to="/login" class="px-4 py-1.5 mr-7">Sign In</base-button>\
+				<img class="w-28 ml-3 lg:w-44 lg:ml-7" src="public/netflix-l.svg"></img>\
+				<base-button to="/login" class="px-2.5 py-1 mr-5 lg:px-4 lg:py-1.5 lg:mr-7 text-sm lg:text-base">Sign In</base-button>\
 			</div>\
-			<div class="flex justify-center items-center h-full mt-28 mb-56 font-semibold tracking-wide">\
-				<div class="flex flex-col items-center w-3/5">\
-					<p class="mb-4 text-5xl text-center">Unlimited films, TV<br> programmes and more.</p>\
-					<p class="mb-6 text-2xl">Watch anytime. Cancel anytime.</p>\
+			<div class="flex justify-center items-center h-full mt-12 mb-28 lg:mt-28 lg:mb-56 lg:font-semibold tracking-wide">\
+				<div class="flex flex-col items-center w-4/5 lg:w-3/5">\
+					<p class="mb-3 lg:mb-4 text-2xl lg:text-5xl font-semibold text-center">Unlimited films, TV<br> programmes and more.</p>\
+					<p class="mb-4 lg:mb-6 text-base lg:text-2xl">Watch anytime. Cancel anytime.</p>\
 					<get-started></get-started>\
 				</div>\
 			</div>\

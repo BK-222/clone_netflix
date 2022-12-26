@@ -2,12 +2,12 @@ const authModule = {
 	namespaced: true,
 	state: function() {
 		return {
-			email: ''
+			email: null
 		}
 	},
 	mutations: {
 		holdEmail: function(state, payload) {
-			this.email = payload.email;
+			state.email = payload.email;
 		}
 	},
 	actions: {

@@ -1,11 +1,11 @@
 Vue.component('get-started', {
 	template:
-	`<div>\
+	`<div>
 		<form @submit.prevent="submitForm">
-		<p class="text-lg text-center">Ready to watch? Enter your email to create or restart your membership.</p>
-		<div class="flex justify-center mt-5">
-			<input class="w-96 h-14 pl-2 text-black" type="email" placeholder="Email address" v-model.trim="email" min="5">
-			<base-button external class="px-5 py-3 ml-px rounded-r-sm rounded-l-none text-2xl" type="submit">Get Started</base-button>
+		<p class="text-base lg:text-lg text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+		<div class="flex flex-col lg:flex-row items-center lg:justify-center mt-5">
+			<input class="w-80 lg:w-96 h-11 lg:h-14 pl-2 text-black" type="email" placeholder="Email address" v-model.trim="email" min="5">
+			<base-button external class="w-46 px-6 py-2 lg:py-3 mt-3.5  lg:ml-px rounded-l-none rounded-r-none lg:rounded-r-sm lg:rounded-l-none text-base lg:text-2xl" type="submit">Get Started</base-button>
 		</div>
 		</form>
 	</div>`,
@@ -28,7 +28,7 @@ Vue.component('get-started', {
 			}
 			console.log('two', actionPayload.email);
 			try {
-				this.$store.dispatch('signUp', actionPayload);
+				this.$store.dispatch('auth/signUp', actionPayload);
 				this.$router.push('/signup/registration');
 			} catch (error) {
 				this.error = error.message || 'Failed to authenticate, try again later.';
