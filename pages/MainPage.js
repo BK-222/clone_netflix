@@ -23,9 +23,9 @@ const mainPage = {
 				:img="value.img"\
 			></value-section>\
 		</div>\
-		<div class="text-5xl font-semibold">\
-			Frequently Asked Questions\
-			<div class="flex flex-col">\
+		<div class="mb-12">\
+			<p class="text-2xl font-semibold">Frequently Asked Questions</p>\
+			<div class="flex flex-col text-base">\
 				<div>Lorem ipsum</div>\
 				<div>Lorem ipsum</div>\
 				<div>Lorem ipsum</div>\
