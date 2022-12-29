@@ -26,12 +26,11 @@ const mainPage = {
 		<div class="mb-12">\
 			<p class="text-2xl font-semibold">Frequently Asked Questions</p>\
 			<div class="flex flex-col text-base">\
-				<div>Lorem ipsum</div>\
-				<div>Lorem ipsum</div>\
-				<div>Lorem ipsum</div>\
-				<div>Lorem ipsum</div>\
-				<div>Lorem ipsum</div>\
-				<div>Lorem ipsum</div>\
+				<question-section v-for="question in questions"\
+				  :key="question.id"\
+				  :title="question.title"\
+				  :description="question.description"\
+			  ></question-section>\
 			</div>\
 			<get-started></get-started>\
 		</div>\
@@ -64,8 +63,44 @@ const mainPage = {
 					subheading: 'Send children on adventures with their favourite characters in a space made just for them – free with your membership.',
 					img: './assets/animation.png'
 				}
-
-			],
+    	],
+    	questions: [
+    	  {
+    	    id: 1, 
+    	    title: 'What is Netflix?',
+    	    description: 'Lorem'
+    	  },
+    	  {
+    	    id: 2,
+    	    title: 'How much does Netflix cost?', 
+    	    description: 'Lorem' 
+    	  },
+    	  {
+    	    id: 3, 
+    	    title: 'What’s different on Basic with adverts?',
+    	    description: 'Lorem'
+    	  }, 
+    	  {
+    	    id: 4, 
+    	    title: 'Where can I watch?',
+    	    description: 'Lorem' 
+    	  },
+    	  {
+    	    id: 5, 
+    	    title: 'How do I cancel?',
+    	    description: 'Lorem' 
+    	  },
+    	  {
+    	    id: 6, 
+    	    title: 'What can I watch on Netflix?',
+    	    description: 'Lorem' 
+    	  }, 
+    	  {
+    	    id: 7, 
+    	    title: 'Is Netflix good for children?',
+    	    description: 'Lorem' 
+    	  } 
+    	], 
 			name: ''
 		}
 	}
