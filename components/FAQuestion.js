@@ -1,15 +1,15 @@
 Vue.component('question-section', {
 	template:
-	`<div>
-	 <div @click="toggleQuestion" class="flex justify-between items-center w-full py-3 mb-2 bg-neutral-800 hover:pointer">
-	  <p class="ml-4">{{ title }}</p>
+	`<div class="w-full m-auto">
+	 <div @click="toggleQuestion" class="flex justify-between items-center w-full lg:w-3/5 py-3 mb-2 bg-neutral-800 cursor-pointer">
+	  <p class="ml-4 lg:text-2xl">{{ title }}</p>
 	  <div class="mr-4 text-2xl">
 	    <p v-if="!expanded">+</p>
 	    <p v-else>x</p>
 	  </div>
 	 </div>
-	 <div v-if="expanded" class="w-full py-3 mb-2 bg-neutral-800">
-	  <p class="ml-4 mr-6">{{ description }}</p>
+	 <div v-if="expanded" class="w-full lg:w-3/5 py-3 mb-2 bg-neutral-800">
+	  <p class="ml-4 mr-6 lg:text-2xl">{{ description }}</p>
 	 </div>
 	 </div>`, 
 	props: {

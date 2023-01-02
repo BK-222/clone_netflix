@@ -4,7 +4,7 @@ const registrationPage = {
 		<p>Finish setting up your account</p>
 		<p>Netflix is personalised for you.</p><br>
 		<p>Create a password to watch on any device at any time.
-		<base-button external>Next</base-button>
+		<base-button to="/signup/regform">Next</base-button>
 		<p>Code:{{ hasEmail }}</p>
 	</div>`,
 	computed: {
