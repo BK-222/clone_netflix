@@ -18,14 +18,14 @@ const planFormPage = {
   </div>`, 
   methods: {
     confirmPlan: async function() {
-      console.log('one');
       const actionPayload = {
         email: this.$store.getters['auth/email'], 
         password: this.$store.getters['auth/password']
       }
       console.log(actionPayload);
       try {
-				this.$store.dispatch('auth/signUp', actionPayload);
+				await this.$store.dispatch('auth/signUp', actionPayload);
+				this.$router.replace('/user');
 			} catch (error) {
 				this.error = error.message || 'Failed to authenticate, try again later.';
 			}

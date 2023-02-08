@@ -19,6 +19,7 @@ const authModule = {
 		setUser: function(state, payload) {
 		  state.userId = payload.userId;
 		  state.token = payload.token;
+		  state.email = payload.email;
 		}
 	},
 	actions: {
@@ -31,9 +32,12 @@ const authModule = {
 		signUp: async function(context, data) {
 		  context.dispatch('auth', Object.assign({ mode: 'signUp' }, data) );
 		},
+		logIn: async function(context, data) {
+		  context.dispatch('auth', Object.assign({ mode: 'logIn' }, data) );
+		}, 
 		auth: async function(context, data) {
 		  const mode = data.mode;
-		  let url;
+		  let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCcGFliNNsPkJpEYfw9xEKVhEGnh5I3vTg';
 		  if (mode === 'signUp') {
 		    url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCcGFliNNsPkJpEYfw9xEKVhEGnh5I3vTg';
 		  }
@@ -53,8 +57,15 @@ const authModule = {
 		  console.log(responseData);
 		  context.commit('setUser', {
 		    token: responseData.idToken,
-		    userId: responseData.localId
+		    userId: responseData.localId, 
+		    email: responseData.email
 		  });
+		}, 
+		logOut: function(context) {
+		  context.commit('setUser', {
+		    token: null, 
+		    userId: null
+		  })
 		}
 	},
 	getters: {
@@ -63,6 +74,12 @@ const authModule = {
 		}, 
 		password: function(state) {
 		  return state.password
+		}, 
+		token: function(state) {
+		  return state.token;
+		}, 
+		isAuthenticated: function(state) {
+		  return !!state.token;
 		}
 	}
 }

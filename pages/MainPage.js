@@ -4,7 +4,8 @@ const mainPage = {
 		<div class="flex flex-col">\
 			<div class="flex justify-between items-center">\
 				<img class="w-28 ml-3 lg:w-44 lg:ml-7" src="public/netflix-l.svg"></img>\
-				<base-button to="/login" class="px-2.5 py-1 mr-5 lg:px-4 lg:py-1.5 lg:mr-7 text-sm lg:text-base">Sign In</base-button>\
+				<base-button v-if="isLoggedIn" external class="px-2.5 py-1 mr-5 lg:px-4 lg:py-1.5 lg:mr-7 text-sm lg:text-base">Sign Out</base-button>\
+				<base-button v-else to="/login" class="px-2.5 py-1 mr-5 lg:px-4 lg:py-1.5 lg:mr-7 text-sm lg:text-base">Sign In</base-button>\
 			</div>\
 			<div class="flex justify-center items-center h-full mt-12 mb-28 lg:mt-28 lg:mb-56 lg:font-semibold tracking-wide">\
 				<div class="flex flex-col items-center w-4/5 lg:w-3/5">\
@@ -105,5 +106,16 @@ Children's profiles come with PIN-protected parental controls that let you restr
     	], 
 			name: ''
 		}
+	}, 
+	methods: {
+	  logOut: function() {
+	    this.$store.dispatch('logOut');
+	    this.$router.replace('/logout');
+	  }
+	}, 
+	computed: {
+	  isLoggedIn: function() {
+	    return this.$store.getters['auth/isAuthenticated'] ;
+	  }
 	}
 }
