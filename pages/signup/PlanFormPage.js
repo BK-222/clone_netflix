@@ -8,14 +8,28 @@ const planFormPage = {
       <li>Change or cancel your plan at any time.</li>
     </ul>
     <ul>
-      <li>Basic</li>
-      <li>Standard</li>
-      <li>Premium</li>
+      <li>
+        <input type="radio" id="basic" value="Basic" v-model="plan"></input>
+        <label for="one">Basic</label>
+      </li>
+      <li>
+        <input type="radio" id="standard" value="Standard" v-model="plan"></input>
+        <label for="standard">Standard</label> 
+      </li>
+      <li>
+        <input type="radio" id="premium" value="Premium" v-model="plan"></input>
+        <label for="premium">Premium</label>
+      </li>
     </ul>
     <form @submit.prevent="confirmPlan">
     <base-button external>Confirm</base-button>
     </form>
-  </div>`, 
+  </div>`,
+  data: function() {
+    return {
+      plan: null
+    }
+  }, 
   methods: {
     confirmPlan: async function() {
       const actionPayload = {

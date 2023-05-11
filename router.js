@@ -7,7 +7,7 @@ const router = new VueRouter({
 		{ path: '/signup/regform', component: regFormPage },
 		{ path: '/signup', component: choosePlanPage }, 
     { path: '/signup/planform', component: planFormPage},
-    { path: '/user', component: userPage, meta: { requiresAuth: true } } 
-		// { path: '/:notFound(.*)', component: notFound }
+    { path: '/user', component: userPage, meta: { requiresAuth: true } }, 
+		{ path: '/:notFound(.*)', component: notFound }
 	]
 });

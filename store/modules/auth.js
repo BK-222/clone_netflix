@@ -30,10 +30,10 @@ const authModule = {
 		  context.commit('setPassword', { user: data })
 		}, 
 		signUp: async function(context, data) {
-		  context.dispatch('auth', Object.assign({ mode: 'signUp' }, data) );
+		  return context.dispatch('auth', Object.assign({ mode: 'signUp' }, data) );
 		},
 		logIn: async function(context, data) {
-		  context.dispatch('auth', Object.assign({ mode: 'logIn' }, data) );
+		  return context.dispatch('auth', Object.assign({ mode: 'logIn' }, data) );
 		}, 
 		auth: async function(context, data) {
 		  const mode = data.mode;
